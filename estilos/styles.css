@@ -8,6 +8,7 @@
 .cabecera{
     background-color: #1033a3;
     grid-area: cabecera;
+    background-image: linear-gradient(to right, #1033a3, black);
 }
 
 .cabecera--titulo{
@@ -41,6 +42,7 @@ bottom: 25px;
     text-align: center;
     font-weight: 900;
     grid-area: pieDePagina;
+    background-image: linear-gradient(to right, #1033a3, black);
 }
 
 
