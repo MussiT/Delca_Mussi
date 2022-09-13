@@ -6,8 +6,8 @@
 
 /* GENERAL */
 .cabecera{
-    background-color: #1033a3;
     grid-area: cabecera;
+    background-image: linear-gradient(to right, #1033a3, black);
 }
 
 .cabecera--titulo{
@@ -30,17 +30,16 @@ bottom: 25px;
 
 .cabecera--navegador li{
     display: inline-block;
-    color: #1033a3;
     background-color: black;
     list-style: none;
     margin-left: 05px;
 }
 
 .pieDePagina{
-    background-color: #1033a3;
     text-align: center;
     font-weight: 900;
     grid-area: pieDePagina;
+    background-image: linear-gradient(to right, #1033a3, black);
 }
 
 
