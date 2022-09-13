@@ -304,18 +304,6 @@ section{
     justify-content: space-evenly;
     align-items: center;
 }
-/* 
-section p{
-    display: flex;
-    padding: 10px;
-    border: 02px solid black;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 30px;
-    background-color: #1033a3;
-    color: #a1a308;
-    } */
 
 /* PLANTEL */
 
@@ -347,44 +335,25 @@ section p{
     text-align: center;
 }
 
-.grillaDeGaleria{
-display: grid;
-grid-template-areas:
- "cabecera cabecera cabecera"
- "titulos1 titulos1 titulos1"
- "fotos1 fotos1 fotos1 "
- "titulos2 titulos2 titulos2"
- "fotos2 fotos2 fotos2"
- "pieDePagina pieDePagina pieDePagina"
-;
-grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr;
-grid-template-columns: repeat(3,auto);
-height: 100vh;
-}
-
 .titulos1{
-    grid-area: titulos1;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .fotos1{
-    grid-area: fotos1;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .titulos2{
-    grid-area: titulos2;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .fotos2{
-    grid-area: fotos2;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -438,51 +407,12 @@ grid-area: formulario;
 /* MOBILE VERTICAL */
 @media screen and (max-width: 599px) and (orientation:portrait) {
 
-    .grillaDeInicio{
-        grid-template-areas: 
-        "cabecera"
-        "santi"
-        "santiTexto"
-        "copa"
-        "copaTexto"
-        "neyen" 
-        "neyenTexto"
-        "pieDePagina"
-        ;
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-columns: 1fr;
-        height: 100vh;
-    }
-
     .santiTexto,
     .copaTexto,
     .neyenTexto{
        font-size: 15px;
     }
     
-
-    .grillaDeGaleria{
-        grid-template-areas:
-         "cabecera"
-         "titulos1" 
-         "fotos1"
-         "titulos1"
-         "fotos1"
-         "titulos1"
-         "fotos1"
-         "titulos2"
-         "fotos2" 
-         "titulos2"
-         "fotos2"
-         "titulos2"
-         "fotos2"
-         "pieDePagina"
-        ;
-        grid-template-rows: repeat(14, 1fr);
-        grid-template-columns: 1fr;
-        height: 100vh;
-        }
-
 .grillaDeHistoria{
     grid-template-areas:
     "cabecera"
@@ -539,41 +469,13 @@ section{
 /* MOBILE HORIZONTAL */
 
 @media screen and (max-width: 599px) and (orientation:landscape) {
-    .grillaDeInicio{
-        grid-template-areas: 
-        "cabecera cabecera"
-        "santi copa"
-        "santiTexto copaTexto"
-        "neyen neyenTexto" 
-        "pieDePagina pieDePagina"
-        ;
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-columns: repeat(2,1fr);
-        height: 100vh;
-    }
-
-    
+ 
     .santiTexto,
     .copaTexto,
     .neyenTexto{
        font-size: 15px;
     }
     
-    .grillaDeGaleria{
-        grid-template-areas:
-         "cabecera cabecera"
-         "titulos1 titulos1" 
-         "fotos1 fotos1"
-         "titulos1 titulos2"
-         "fotos1 fotos2"
-         "titulos2 titulos2"
-         "fotos2 fotos2"
-         "pieDePagina pieDePagina"
-        ;
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-columns:repeat(2,1fr);
-        height: 100vh;
-        }
         .grillaDeHistoria{
             grid-template-areas:
         "cabecera cabecera"
@@ -621,42 +523,14 @@ section{
 /* TABLET */
 
 @media screen and (min-width:600px) and (max-width:1199px){
-    .grillaDeInicio{
-        display: grid;
-        grid-template-areas: 
-        "cabecera cabecera"
-        "santi copa"
-        "santiTexto copaTexto"
-        "neyen neyenTexto" 
-        "pieDePagina pieDePagina"
-        ;
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-columns: repeat(2,1fr);
-        height: 100vh;
-    }
 
-    
     .santiTexto,
     .copaTexto,
     .neyenTexto{
        font-size: 15px;
     }
     
-    .grillaDeGaleria{
-        grid-template-areas:
-        "cabecera cabecera"
-        "titulos1 titulos1" 
-        "fotos1 fotos1"
-        "titulos1 titulos2"
-        "fotos1 fotos2"
-        "titulos2 titulos2"
-        "fotos2 fotos2"
-        "pieDePagina pieDePagina"
-        ;
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-columns:repeat(2,1fr);
-        height: 100vh;
-        }
+
         .grillaDeHistoria{
             grid-template-areas:
         "cabecera cabecera"
