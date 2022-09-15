@@ -61,7 +61,7 @@ bottom: 25px;
     "pieDePagina pieDePagina pieDePagina"
     ;
     grid-template-rows: 1fr 3fr 2fr 1fr;
-    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
     height: 100vh;
 }
 /* 
@@ -83,12 +83,12 @@ bottom: 25px;
 
 .santiTexto{
     grid-area: santiTexto;
+    text-align: center;
+    background-color: darkgreen;
 }
 
 .copaTexto{
     grid-area: copaTexto;
-    display: flex;
-    align-items: center;
     text-align: center;
     background-color: lightblue;
 }
@@ -98,6 +98,7 @@ bottom: 25px;
     text-align: center;
     background-color: #d4134a;
 }
+
 
 /* INICIO */
 
