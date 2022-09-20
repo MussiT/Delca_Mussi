@@ -85,7 +85,7 @@ bottom: 25px;
 .santiTexto{
     grid-area: santiTexto;
     text-align: center;
-    background-color: darkgreen;
+    background-color: green;
 }
 
 .copaTexto{
@@ -245,9 +245,7 @@ grid-area: fotoTifa4;
     grid-area: ligaNuñez;
 }
 
-@keyframes efectoTitulos{
-    
-}
+
 /* HISTORIA */
 
 /* PLANTEL */
