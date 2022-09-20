@@ -48,6 +48,7 @@ bottom: 25px;
     src: url("../fuentes/Kanit-MediumItalic.ttf");
 }
 
+
 /* GENERAL */
 
 /* INICIO */
@@ -127,6 +128,7 @@ bottom: 25px;
     grid-template-columns: 2fr 2fr 2fr;
     column-gap: 10px;
     row-gap: 10px;
+    background-color: #1033a3;
 }
 
 .valores--foto{
@@ -172,8 +174,9 @@ grid-area: nuevo;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
-    background-color: #1033a3;
+    color: #1033a3;
+    background-color: white;
+    border-radius: 25px;
 }
 .escudo,
 .tifa,
@@ -184,6 +187,7 @@ grid-area: nuevo;
     justify-content: center;
     color: #1033a3;
     background-color: black;
+    border-radius: 25px;
 }
 
 .casaca{
@@ -239,6 +243,10 @@ grid-area: fotoTifa4;
 
 .ligaNuñez{
     grid-area: ligaNuñez;
+}
+
+@keyframes efectoTitulos{
+    
 }
 /* HISTORIA */
 
@@ -413,6 +421,8 @@ height: 100vh;
     justify-content: space-around;
     align-items: center;
 }
+
+
 
 /* GALERIA */
 
