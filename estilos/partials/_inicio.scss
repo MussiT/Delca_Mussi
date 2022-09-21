@@ -1,0 +1,120 @@
+.grillaDeInicio{
+    display: grid;
+    grid-template-areas: 
+    "cabecera cabecera cabecera"
+    "santi copa neyen"
+    "santiTexto copaTexto neyenTexto"
+    "pieDePagina pieDePagina pieDePagina"
+    ;
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    height: 100vh;
+}
+/* 
+.border{
+    border: 02px solid blue;
+} */
+
+.santi{
+    grid-area: santi;
+}
+
+.neyen{
+    grid-area: neyen;
+}
+
+.copa{
+    grid-area: copa;
+}
+
+.santiTexto{
+    grid-area: santiTexto;
+    text-align: center;
+    background-color: green;
+}
+
+.copaTexto{
+    grid-area: copaTexto;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.neyenTexto{
+    grid-area: neyenTexto;
+    text-align: center;
+    background-color: #d4134a;
+}
+
+
+
+
+
+
+@media screen and (max-width: 599px) and (orientation:portrait) {
+
+    .grillaDeInicio{
+        grid-template-areas: 
+        "cabecera"
+        "santi"
+        "santiTexto"
+        "copa"
+        "copaTexto"
+        "neyen" 
+        "neyenTexto"
+        "pieDePagina"
+        ;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+
+    .santiTexto,
+    .copaTexto,
+    .neyenTexto{
+       font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 599px) and (orientation:landscape) {
+    .grillaDeInicio{
+        grid-template-areas: 
+        "cabecera cabecera"
+        "santi copa"
+        "santiTexto copaTexto"
+        "neyen neyenTexto" 
+        "pieDePagina pieDePagina"
+        ;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2,1fr);
+        height: 100vh;
+    }
+    .santiTexto,
+    .copaTexto,
+    .neyenTexto{
+       font-size: 15px;
+    }
+    
+    }
+
+    @media screen and (min-width:600px) and (max-width:1199px){
+        .grillaDeInicio{
+            grid-template-areas: 
+            "cabecera cabecera"
+            "santi copa"
+            "santiTexto copaTexto"
+            "neyen neyenTexto" 
+            "pieDePagina pieDePagina"
+            ;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(2,1fr);
+            height: 100vh;
+        }
+    
+        
+        .santiTexto,
+        .copaTexto,
+        .neyenTexto{
+           font-size: 15px;
+        }
+    }    

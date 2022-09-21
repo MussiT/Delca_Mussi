@@ -1,0 +1,39 @@
+.grillaDeFormulario{
+    grid-template-areas: 
+    "cabecera"
+    "formulario"
+    "pieDePagina";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,auto);
+}
+.formulario{
+text-align: center;
+grid-area: formulario;
+}
+
+.fondo--formulario{
+    background-image: url("../imagenes/fondo_form.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.enviar{
+    cursor: pointer;
+    background-color: $colorDelca;
+    color: white;
+    transition: padding 0.5s;
+    &:hover{
+        padding: 2px;
+    }
+}
+
+
+.azul{
+    background-color: $colorDelca;
+    color:white
+}
+
+.blanco{
+    color: white;
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: kanit;
+  }
+  
+  .cabecera {
+    grid-area: cabecera;
+    background-image: linear-gradient(to right, $colorDelca, black);
+  }
+  
+  .cabecera--titulo {
+    display: inline-block;
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 25px;
+  }
+  
+  .cabecera--foto {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .cabecera--navegador {
+    background-color: black;
+    text-align: right;
+    padding: 10px;
+  }
+  .cabecera--navegador li {
+    display: inline-block;
+    background-color: black;
+    list-style: none;
+    margin-left: 5px;
+  }
+  
+  .pieDePagina {
+    text-align: center;
+    font-weight: 900;
+    grid-area: pieDePagina;
+    background-image: linear-gradient(to right, $colorDelca, black);
+  }
+  
+  @font-face {
+    font-family: kanit;
+    src: url("../fuentes/Kanit-MediumItalic.ttf");
+  }

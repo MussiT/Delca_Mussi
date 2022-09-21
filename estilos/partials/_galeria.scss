@@ -1,0 +1,136 @@
+.fotos--galeria{
+    margin: 15px;
+    border-top: 10px solid $colorDelca;
+    border-right: 10px solid black;
+    border-left:  10px solid black;
+    border-bottom: 10px solid $colorDelca;
+    width: 350px;
+    height: 300px;
+    border-radius: 05px;
+    transition: padding 0.5s;
+}
+
+.fotos--galeria:hover {
+   padding: 6px;
+}
+
+
+
+.titulos--galeria{
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+    color:$colorDelca;
+    border-radius: 05px;
+    text-align: center;
+}
+
+.grillaDeGaleria{
+display: grid;
+grid-template-areas:
+ "cabecera cabecera cabecera"
+ "titulos1 titulos1 titulos1"
+ "fotos1 fotos1 fotos1 "
+ "titulos2 titulos2 titulos2"
+ "fotos2 fotos2 fotos2"
+ "pieDePagina pieDePagina pieDePagina"
+;
+grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr;
+grid-template-columns: repeat(3,auto);
+height: 100vh;
+}
+
+.titulos1{
+    grid-area: titulos1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fotos1{
+    grid-area: fotos1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulos2{
+    grid-area: titulos2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fotos2{
+    grid-area: fotos2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 599px) and (orientation:portrait) {
+.grillaDeGaleria{
+    grid-template-areas:
+     "cabecera"
+     "titulos1" 
+     "fotos1"
+     "titulos1"
+     "fotos1"
+     "titulos1"
+     "fotos1"
+     "titulos2"
+     "fotos2" 
+     "titulos2"
+     "fotos2"
+     "titulos2"
+     "fotos2"
+     "pieDePagina"
+    ;
+    grid-template-rows: repeat(14, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+    }
+}
+@media screen and (max-width: 599px) and (orientation:landscape) {
+  
+    
+    .grillaDeGaleria{
+        grid-template-areas:
+         "cabecera cabecera"
+         "titulos1 titulos1" 
+         "fotos1 fotos1"
+         "titulos1 titulos2"
+         "fotos1 fotos2"
+         "titulos2 titulos2"
+         "fotos2 fotos2"
+         "pieDePagina pieDePagina"
+        ;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns:repeat(2,1fr);
+        height: 100vh;
+        }
+        }
+        @media screen and (min-width:600px) and (max-width:1199px){
+    
+            .grillaDeGaleria{
+                grid-template-areas:
+                "cabecera cabecera"
+                "titulos1 titulos1" 
+                "fotos1 fotos1"
+                "titulos1 titulos2"
+                "fotos1 fotos2"
+                "titulos2 titulos2"
+                "fotos2 fotos2"
+                "pieDePagina pieDePagina"
+                ;
+                grid-template-rows: repeat(8, 1fr);
+                grid-template-columns:repeat(2,1fr);
+                height: 100vh;
+                }
+                }

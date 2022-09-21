@@ -1,0 +1,155 @@
+.grillaDePlantel{
+    display: grid;
+    grid-template-areas: 
+    "cabecera cabecera cabecera cabecera cabecera cabecera cabecera"
+    "lolo lolo lolo lolo lolo lolo lolo"
+    "pache santi balta balta balta fabri rusca"
+    "gato gato gato juan juan juan juan"
+    "mussi mussi mussi mussi mussi mussi mussi"
+    "crispa crispa crispa niño neyen neyen neyen"
+    "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina  pieDePagina  pieDePagina";
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
+    height: 100vh;
+}
+
+.lolo{
+    grid-area: lolo;
+}
+
+.pache{
+    grid-area: pache;
+    display: flex;
+    justify-content: end;
+}
+
+.santi2{
+    grid-area: santi; 
+    display: flex;
+    justify-content:start;
+}
+
+.balta{
+    grid-area: balta;
+    display: flex;
+    justify-content:center;
+}
+
+.fabri{
+    grid-area: fabri;
+    display: flex;
+    justify-content: end;
+}
+
+.rusca{
+    grid-area: rusca;
+    display: flex;
+    justify-content:start;
+}
+
+.juan{
+    grid-area: juan;
+   
+}
+
+.gato{
+    grid-area: gato;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mussi{
+    grid-area: mussi;
+}
+
+.crispa{
+    grid-area: crispa;
+    display: flex;
+    justify-content:end;
+}
+
+.niño{
+    grid-area: niño;
+}
+
+.neyen2{
+    grid-area: neyen;
+    display: flex;
+    justify-content:start;
+}
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    p{
+        display: flex;
+        padding: 10px;
+        border: 02px solid black;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 30px;
+        background-color: $colorDelca;
+        color: #a1a308;
+    }
+}
+
+@media screen and (max-width: 599px) and (orientation:portrait) {
+
+
+    .grillaDePlantel{
+        grid-template-areas: 
+        "cabecera cabecera cabecera"
+        "lolo lolo lolo"
+        "pache balta rusca"
+        "santi santi fabri"
+        "gato gato juan"
+        "mussi mussi mussi"
+        "crispa niño neyen" 
+        "pieDePagina pieDePagina pieDePagina";
+        grid-template-columns:auto auto auto;
+        grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 3fr 1fr;
+        height: 100vh;
+    }
+    
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+
+    @media screen and (max-width: 599px) and (orientation:landscape) {
+  
+    .grillaDePlantel{
+        grid-template-areas: 
+        "cabecera cabecera cabecera cabecera cabecera"
+        "lolo lolo lolo lolo lolo"
+        "pache santi balta fabri rusca"
+        "gato gato gato juan juan"
+        "mussi mussi mussi mussi mussi"
+        "crispa crispa niño neyen neyen"
+        "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina";
+        grid-template-columns: repeat(5,auto);
+        grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
+        height: 100vh;
+    }
+    }
+
+    @media screen and (min-width:600px) and (max-width:1199px){
+    
+        .grillaDePlantel{
+            grid-template-areas: 
+            "cabecera cabecera cabecera cabecera cabecera"
+            "lolo lolo lolo lolo lolo"
+            "pache santi balta fabri rusca"
+            "gato gato gato juan juan"
+            "mussi mussi mussi mussi mussi"
+            "crispa crispa niño neyen neyen"
+            "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina";
+            grid-template-columns: repeat(5,auto);
+            grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
+            height: 100vh;
+}
+}
