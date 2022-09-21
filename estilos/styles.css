@@ -73,19 +73,19 @@
 .santiTexto {
   grid-area: santiTexto;
   text-align: center;
-  background-color: green;
+  background-color: #1033a3;
 }
 
 .copaTexto {
   grid-area: copaTexto;
   text-align: center;
-  background-color: lightblue;
+  background-color: white;
 }
 
 .neyenTexto {
   grid-area: neyenTexto;
   text-align: center;
-  background-color: #d4134a;
+  background-color: #1033a3;
 }
 
 @media screen and (max-width: 599px) and (orientation: portrait) {
