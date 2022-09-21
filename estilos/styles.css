@@ -5,6 +5,10 @@
   font-family: kanit;
 }
 
+/* 
+.border{
+    border: 02px solid blue;
+} */
 .cabecera {
   grid-area: cabecera;
   background-image: linear-gradient(to right, #1033a3, black);
@@ -54,10 +58,6 @@
   height: 100vh;
 }
 
-/* 
-.border{
-    border: 02px solid blue;
-} */
 .santi {
   grid-area: santi;
 }
