@@ -12,32 +12,28 @@
   .cabecera {
     grid-area: cabecera;
     background-image: linear-gradient(to right, $colorDelca, black);
+    .cabecera--foto {
+      display: inline-block;
+      margin: 10px;
+    }  
+    .cabecera--titulo {
+      display: inline-block;
+      margin-bottom: 5px;
+      position: relative;
+      bottom: 25px;
+    }
+    .cabecera--navegador {
+      background-color: black;
+      text-align: right;
+      padding: 10px;
+      li{
+        display: inline-block;
+        background-color: black;
+        list-style: none;
+        margin-left: 5px;
+      }
+    }
   }
-  
-  .cabecera--titulo {
-    display: inline-block;
-    margin-bottom: 5px;
-    position: relative;
-    bottom: 25px;
-  }
-  
-  .cabecera--foto {
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  .cabecera--navegador {
-    background-color: black;
-    text-align: right;
-    padding: 10px;
-  }
-  .cabecera--navegador li {
-    display: inline-block;
-    background-color: black;
-    list-style: none;
-    margin-left: 5px;
-  }
-  
   .pieDePagina {
     text-align: center;
     font-weight: 900;

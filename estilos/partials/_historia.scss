@@ -22,125 +22,103 @@
     column-gap: 10px;
     row-gap: 10px;
     background-color: $colorDelca;
-}
-
-.valores--foto{
-    display: inline-block;
-    margin: 15px;
-    border-top: 15px solid $colorDelca;
-    border-right: 15px solid black;
-    border-left:  15px solid black;
-    border-bottom: 15px solid $colorDelca;
-    border-radius: 05px;
-    grid-area: valores;
-
-}
-
-.valores--texto,
-.textoEscudo,
-.textoCasaca,
-.textoTifa,
-.campeonesTexto{
-    font-size: 17px;
-    grid-area: textoValores;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.escudo--viejo{
-grid-area: viejo;
-}
-
-.escudo--nuevo{
-grid-area: nuevo;
-}
-
-.textoEscudo{
-    grid-area: textoEscudo;
-}
-
-.valor,
-.casaca,
-.campeones{
-    grid-area: valor;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $colorDelca;
-    background-color: white;
-    border-radius: 25px;
-}
-.escudo,
-.tifa,
-.ligaNuñez{
-    grid-area: escudo;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $colorDelca;
-    background-color: black;
-    border-radius: 25px;
-}
-
-.casaca{
-    grid-area: casaca;
-}
-
-.camisetaFoto{
-    grid-area: camisetaFoto;
-}
-
-.textoCasaca{
-    grid-area: textoCasaca;
-}
-
-.tifa{
-    grid-area: tifa;
-}
-
-.fotoTifa1{
-    grid-area: fotoTifa1;
-}
-
-.textoTifa{
-    grid-area: textoTifa;
-}
-
-.fotoTifa2{
-    grid-area: fotoTifa2;
-}
-.fotoTifa3{
-    grid-area: fotoTifa3;
-}
-
-.fotoTifa4{
-grid-area: fotoTifa4;
-}
-
-.campeones{
-    grid-area: campeones;
-}
-
-.campeonesFoto1{
-    grid-area: campeonesFoto1;
-}
-
-.campeonesTexto{
-    grid-area: campeonesTexto;
-}
-
-.campeonesFoto2{
-    grid-area: campeonesFoto2;
-}
-
-.ligaNuñez{
-    grid-area: ligaNuñez;
+    .valores--foto{
+        display: inline-block;
+        margin: 15px;
+        border-top: 15px solid $colorDelca;
+        border-right: 15px solid black;
+        border-left:  15px solid black;
+        border-bottom: 15px solid $colorDelca;
+        border-radius: 05px;
+        grid-area: valores;
+    }
+    .valores--texto,
+    .textoEscudo,
+    .textoCasaca,
+    .textoTifa,
+    .campeonesTexto{
+        font-size: 17px;
+        grid-area: textoValores;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .escudo--viejo{
+    grid-area: viejo;
+    }
+    .escudo--nuevo{
+    grid-area: nuevo;
+    }
+    .textoEscudo{
+        grid-area: textoEscudo;
+    }
+    .valor,
+    .casaca,
+    .campeones{
+        grid-area: valor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $colorDelca;
+        background-color: white;
+        border-radius: 25px;
+    }
+    .escudo,
+    .tifa,
+    .ligaNuñez{
+        grid-area: escudo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $colorDelca;
+        background-color: black;
+        border-radius: 25px;
+    }
+    .casaca{
+        grid-area: casaca;
+    }
+    .camisetaFoto{
+        grid-area: camisetaFoto;
+    }
+    .textoCasaca{
+        grid-area: textoCasaca;
+    }
+    .tifa{
+        grid-area: tifa;
+    }
+    .fotoTifa1{
+        grid-area: fotoTifa1;
+    }
+    .textoTifa{
+        grid-area: textoTifa;
+    }
+    .fotoTifa2{
+        grid-area: fotoTifa2;
+    }
+    .fotoTifa3{
+        grid-area: fotoTifa3;
+    }
+    .fotoTifa4{
+    grid-area: fotoTifa4;
+    }
+    .campeones{
+        grid-area: campeones;
+    }
+    .campeonesFoto1{
+        grid-area: campeonesFoto1;
+    }
+    .campeonesTexto{
+        grid-area: campeonesTexto;
+    }
+    .campeonesFoto2{
+        grid-area: campeonesFoto2;
+    }    
+    .ligaNuñez{
+        grid-area: ligaNuñez;
+    }
 }
 
 @media screen and (max-width: 599px) and (orientation:portrait) {
-
-
     .grillaDeHistoria{
         grid-template-areas:
         "cabecera"
@@ -174,8 +152,6 @@ grid-area: fotoTifa4;
     }
 
     @media screen and (max-width: 599px) and (orientation:landscape) {
-  
-    
         .grillaDeHistoria{
             grid-template-areas:
         "cabecera cabecera"
@@ -200,11 +176,9 @@ grid-area: fotoTifa4;
         column-gap: 10px;
         row-gap: 10px;
         }
-        
 }
 
 @media screen and (min-width:600px) and (max-width:1199px){
-    
     .grillaDeHistoria{
         grid-template-areas:
     "cabecera cabecera"

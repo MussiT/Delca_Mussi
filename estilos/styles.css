@@ -13,26 +13,22 @@
   grid-area: cabecera;
   background-image: linear-gradient(to right, #1033a3, black);
 }
-
-.cabecera--titulo {
+.cabecera .cabecera--foto {
+  display: inline-block;
+  margin: 10px;
+}
+.cabecera .cabecera--titulo {
   display: inline-block;
   margin-bottom: 5px;
   position: relative;
   bottom: 25px;
 }
-
-.cabecera--foto {
-  display: inline-block;
-  margin: 10px;
-}
-
-.cabecera--navegador {
+.cabecera .cabecera--navegador {
   background-color: black;
   text-align: right;
   padding: 10px;
 }
-
-.cabecera--navegador li {
+.cabecera .cabecera--navegador li {
   display: inline-block;
   background-color: black;
   list-style: none;
@@ -57,32 +53,26 @@
   grid-template-columns: 2fr 2fr 2fr;
   height: 100vh;
 }
-
-.santi {
+.grillaDeInicio .santi {
   grid-area: santi;
 }
-
-.neyen {
+.grillaDeInicio .neyen {
   grid-area: neyen;
 }
-
-.copa {
+.grillaDeInicio .copa {
   grid-area: copa;
 }
-
-.santiTexto {
+.grillaDeInicio .santiTexto {
   grid-area: santiTexto;
   text-align: center;
   background-color: #1033a3;
 }
-
-.copaTexto {
+.grillaDeInicio .copaTexto {
   grid-area: copaTexto;
   text-align: center;
   background-color: white;
 }
-
-.neyenTexto {
+.grillaDeInicio .neyenTexto {
   grid-area: neyenTexto;
   text-align: center;
   background-color: #1033a3;
@@ -95,9 +85,9 @@
     grid-template-columns: 1fr;
     height: 100vh;
   }
-  .santiTexto,
-.copaTexto,
-.neyenTexto {
+  .grillaDeInicio .santiTexto,
+.grillaDeInicio .copaTexto,
+.grillaDeInicio .neyenTexto {
     font-size: 15px;
   }
 }
@@ -108,9 +98,9 @@
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
   }
-  .santiTexto,
-.copaTexto,
-.neyenTexto {
+  .grillaDeInicio .santiTexto,
+.grillaDeInicio .copaTexto,
+.grillaDeInicio .neyenTexto {
     font-size: 15px;
   }
 }
@@ -121,9 +111,9 @@
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
   }
-  .santiTexto,
-.copaTexto,
-.neyenTexto {
+  .grillaDeInicio .santiTexto,
+.grillaDeInicio .copaTexto,
+.grillaDeInicio .neyenTexto {
     font-size: 15px;
   }
 }
@@ -134,78 +124,65 @@
   grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
   height: 100vh;
 }
-
-.lolo {
+.grillaDePlantel .lolo {
   grid-area: lolo;
 }
-
-.pache {
+.grillaDePlantel .pache {
   grid-area: pache;
   display: flex;
   justify-content: end;
 }
-
-.santi2 {
+.grillaDePlantel .santi2 {
   grid-area: santi;
   display: flex;
   justify-content: start;
 }
-
-.balta {
+.grillaDePlantel .balta {
   grid-area: balta;
   display: flex;
   justify-content: center;
 }
-
-.fabri {
+.grillaDePlantel .fabri {
   grid-area: fabri;
   display: flex;
   justify-content: end;
 }
-
-.rusca {
+.grillaDePlantel .rusca {
   grid-area: rusca;
   display: flex;
   justify-content: start;
 }
-
-.juan {
+.grillaDePlantel .juan {
   grid-area: juan;
 }
-
-.gato {
+.grillaDePlantel .gato {
   grid-area: gato;
   display: flex;
   justify-content: space-around;
 }
-
-.mussi {
+.grillaDePlantel .mussi {
   grid-area: mussi;
 }
-
-.crispa {
+.grillaDePlantel .crispa {
   grid-area: crispa;
   display: flex;
   justify-content: end;
 }
-
-.niño {
+.grillaDePlantel .niño {
   grid-area: niño;
 }
-
-.neyen2 {
+.grillaDePlantel .neyen2 {
   grid-area: neyen;
   display: flex;
   justify-content: start;
 }
-
-section {
+.grillaDePlantel section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
 }
-section p {
+.grillaDePlantel section p {
   display: flex;
   padding: 10px;
   border: 2px solid black;
@@ -224,7 +201,7 @@ section p {
     grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 3fr 1fr;
     height: 100vh;
   }
-  section {
+  .grillaDePlantel section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,8 +233,7 @@ section p {
   row-gap: 10px;
   background-color: #1033a3;
 }
-
-.valores--foto {
+.grillaDeHistoria .valores--foto {
   display: inline-block;
   margin: 15px;
   border-top: 15px solid #1033a3;
@@ -267,34 +243,29 @@ section p {
   border-radius: 5px;
   grid-area: valores;
 }
-
-.valores--texto,
-.textoEscudo,
-.textoCasaca,
-.textoTifa,
-.campeonesTexto {
+.grillaDeHistoria .valores--texto,
+.grillaDeHistoria .textoEscudo,
+.grillaDeHistoria .textoCasaca,
+.grillaDeHistoria .textoTifa,
+.grillaDeHistoria .campeonesTexto {
   font-size: 17px;
   grid-area: textoValores;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.escudo--viejo {
+.grillaDeHistoria .escudo--viejo {
   grid-area: viejo;
 }
-
-.escudo--nuevo {
+.grillaDeHistoria .escudo--nuevo {
   grid-area: nuevo;
 }
-
-.textoEscudo {
+.grillaDeHistoria .textoEscudo {
   grid-area: textoEscudo;
 }
-
-.valor,
-.casaca,
-.campeones {
+.grillaDeHistoria .valor,
+.grillaDeHistoria .casaca,
+.grillaDeHistoria .campeones {
   grid-area: valor;
   display: flex;
   align-items: center;
@@ -303,10 +274,9 @@ section p {
   background-color: white;
   border-radius: 25px;
 }
-
-.escudo,
-.tifa,
-.ligaNuñez {
+.grillaDeHistoria .escudo,
+.grillaDeHistoria .tifa,
+.grillaDeHistoria .ligaNuñez {
   grid-area: escudo;
   display: flex;
   align-items: center;
@@ -315,60 +285,46 @@ section p {
   background-color: black;
   border-radius: 25px;
 }
-
-.casaca {
+.grillaDeHistoria .casaca {
   grid-area: casaca;
 }
-
-.camisetaFoto {
+.grillaDeHistoria .camisetaFoto {
   grid-area: camisetaFoto;
 }
-
-.textoCasaca {
+.grillaDeHistoria .textoCasaca {
   grid-area: textoCasaca;
 }
-
-.tifa {
+.grillaDeHistoria .tifa {
   grid-area: tifa;
 }
-
-.fotoTifa1 {
+.grillaDeHistoria .fotoTifa1 {
   grid-area: fotoTifa1;
 }
-
-.textoTifa {
+.grillaDeHistoria .textoTifa {
   grid-area: textoTifa;
 }
-
-.fotoTifa2 {
+.grillaDeHistoria .fotoTifa2 {
   grid-area: fotoTifa2;
 }
-
-.fotoTifa3 {
+.grillaDeHistoria .fotoTifa3 {
   grid-area: fotoTifa3;
 }
-
-.fotoTifa4 {
+.grillaDeHistoria .fotoTifa4 {
   grid-area: fotoTifa4;
 }
-
-.campeones {
+.grillaDeHistoria .campeones {
   grid-area: campeones;
 }
-
-.campeonesFoto1 {
+.grillaDeHistoria .campeonesFoto1 {
   grid-area: campeonesFoto1;
 }
-
-.campeonesTexto {
+.grillaDeHistoria .campeonesTexto {
   grid-area: campeonesTexto;
 }
-
-.campeonesFoto2 {
+.grillaDeHistoria .campeonesFoto2 {
   grid-area: campeonesFoto2;
 }
-
-.ligaNuñez {
+.grillaDeHistoria .ligaNuñez {
   grid-area: ligaNuñez;
 }
 
@@ -402,7 +358,34 @@ section p {
     row-gap: 10px;
   }
 }
-.fotos--galeria {
+.grillaDeGaleria {
+  display: grid;
+  grid-template-areas: "cabecera cabecera cabecera" "titulos1 titulos1 titulos1" "fotos1 fotos1 fotos1 " "titulos2 titulos2 titulos2" "fotos2 fotos2 fotos2" "pieDePagina pieDePagina pieDePagina";
+  grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr;
+  grid-template-columns: repeat(3, auto);
+  height: 100vh;
+}
+.grillaDeGaleria .titulos1 {
+  grid-area: titulos1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.grillaDeGaleria .titulos1 .titulos--galeria {
+  margin: 10px;
+  padding: 5px;
+  background-color: black;
+  color: #1033a3;
+  border-radius: 5px;
+  text-align: center;
+}
+.grillaDeGaleria .fotos1 {
+  grid-area: fotos1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.grillaDeGaleria .fotos1 .fotos--galeria {
   margin: 15px;
   border-top: 10px solid #1033a3;
   border-right: 10px solid black;
@@ -413,12 +396,16 @@ section p {
   border-radius: 5px;
   transition: padding 0.5s;
 }
-
-.fotos--galeria:hover {
+.grillaDeGaleria .fotos1 .fotos--galeria:hover {
   padding: 6px;
 }
-
-.titulos--galeria {
+.grillaDeGaleria .titulos2 {
+  grid-area: titulos2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.grillaDeGaleria .titulos2 .titulos--galeria {
   margin: 10px;
   padding: 5px;
   background-color: black;
@@ -426,41 +413,25 @@ section p {
   border-radius: 5px;
   text-align: center;
 }
-
-.grillaDeGaleria {
-  display: grid;
-  grid-template-areas: "cabecera cabecera cabecera" "titulos1 titulos1 titulos1" "fotos1 fotos1 fotos1 " "titulos2 titulos2 titulos2" "fotos2 fotos2 fotos2" "pieDePagina pieDePagina pieDePagina";
-  grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr;
-  grid-template-columns: repeat(3, auto);
-  height: 100vh;
-}
-
-.titulos1 {
-  grid-area: titulos1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.fotos1 {
-  grid-area: fotos1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.titulos2 {
-  grid-area: titulos2;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.fotos2 {
+.grillaDeGaleria .fotos2 {
   grid-area: fotos2;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.grillaDeGaleria .fotos2 .fotos--galeria {
+  margin: 15px;
+  border-top: 10px solid #1033a3;
+  border-right: 10px solid black;
+  border-left: 10px solid black;
+  border-bottom: 10px solid #1033a3;
+  width: 350px;
+  height: 300px;
+  border-radius: 5px;
+  transition: padding 0.5s;
+}
+.grillaDeGaleria .fotos2 .fotos--galeria:hover {
+  padding: 6px;
 }
 
 @media screen and (max-width: 599px) and (orientation: portrait) {
@@ -492,34 +463,29 @@ section p {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: repeat(3, auto);
 }
-
-.formulario {
-  text-align: center;
-  grid-area: formulario;
-}
-
-.fondo--formulario {
+.grillaDeFormulario .fondo--formulario {
   background-image: url("../imagenes/fondo_form.jpg");
   background-size: contain;
   background-repeat: repeat;
   background-position: center;
 }
-
-.enviar {
+.grillaDeFormulario .fondo--formulario .formulario {
+  text-align: center;
+  grid-area: formulario;
+}
+.grillaDeFormulario .fondo--formulario .formulario .enviar {
   cursor: pointer;
   background-color: #1033a3;
   color: white;
   transition: padding 0.5s;
 }
-.enviar:hover {
+.grillaDeFormulario .fondo--formulario .formulario .enviar:hover {
   padding: 2px;
 }
-
-.azul {
+.grillaDeFormulario .fondo--formulario .formulario .azul {
   background-color: #1033a3;
   color: white;
 }
-
-.blanco {
+.grillaDeFormulario .fondo--formulario .formulario .blanco {
   color: white;
 }/*# sourceMappingURL=styles.css.map */
